@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 50, 0.8), rgba(0, 0, 50, 0.8)), url('./bg1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* position: relative; */
+}
+
+.form_box {
+    width: 90%;
+    max-width: 450px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 50px 60px 70px;
+    text-align: center;
+    border-radius: 2px;
+
+
+}
+
+.form_box h1 {
+    font-size: 27px;
+    font-weight: 700;
+    margin-bottom: 45px;
+    color: #0d0d75;
+    position: relative;
+
+}
+
+.form_box h1::after {
+    content: '';
+    width: 27px;
+    height: 3px;
+    background: #0d0d75;
+    position: absolute;
+    border-radius: 3px;
+    left: 50%;
+    bottom: -12px;
+    transform: translateX(-50%);
+
+
+}
+
+form {
+    margin-top: 27px;
+}
+
+.input_field {
+    border: none;
+    background: rgba(202, 202, 215, 0.8);
+    margin: 10px 0px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+
+}
+
+input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 15px 25px;
+}
+
+.input_field i {
+
+    color: rgba(75, 75, 102, 0.8);
+    margin-left: 12px;
+
+}
+
+
+.input_group p {
+    text-align: left;
+    margin-top: 18px;
+}
+
+.input_group a {
+    text-decoration: none;
+    color: #252596;
+}
+
+.btn_field {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 33px;
+}
+
+.btn_field button {
+    padding: 10px 55px;
+    border-radius: 35px;
+    border: 0;
+    outline: 0;
+    background: #252596;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+.btn_field button.disableBtn {
+    background: rgba(202, 202, 215, 0.8);
+    color: #555;
+}
